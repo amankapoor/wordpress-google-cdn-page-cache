@@ -48,6 +48,10 @@ server {
 
 **Warning: this is a first prototype Nginx server config. The documentation is under construction.**
 
+The next step is to setup a [Google Cloud Load Balancer](https://cloud.google.com/load-balancing/) with the option `CDN` enabled. This will create a public caching CDN IP that will access your server via the Nginx proxy. You can configure the CDN IP via the DNS or use Google's international DNS. 
+
+The CDN will cache content based on HTTP headers which are controlled by the plugin.
+
 The plugin provides in basic management functionality such as controlling the CDN cache expiry. Cache invalidation is not yet possible from PHP but once that's made available by Google it will be added. 
 
 We are interested to learn about your experiences and feedback when using this plugin. Please submit your feedback on the [Github community forum](https://github.com/o10n-x/wordpress-google-cdn-page-cache/issues).
