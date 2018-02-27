@@ -15,11 +15,11 @@ The Nginx server is technically very simple and should perform well on the micro
 
 ```nginx
 # Origin pull in nginx 
-upstream origin {
+upstream origin_https {
 	server	your-server-IP:443;
 }
 upstream origin_http {
-	server	your-server-IP:443;
+	server	your-server-IP:80;
 }
 
 server {
@@ -27,7 +27,7 @@ server {
 	server_name o10n-google-cdn.pagespeed.pro;
 
 	location / {
-		proxy_pass							https://origin$uri;
+		proxy_pass							https://origin_https$uri;
 		proxy_set_header  host 				$host;
 		proxy_set_header  X-Forwarded-For 	$proxy_add_x_forwarded_for;
 	}
@@ -38,7 +38,7 @@ server {
     server_name o10n-google-cdn.pagespeed.pro;
 
     location / {
-		proxy_pass							http://origin$uri;
+		proxy_pass							http://origin_http$uri;
 		proxy_set_header  host 				$host;
 		proxy_set_header  X-Forwarded-For 	$proxy_add_x_forwarded_for;
     }
