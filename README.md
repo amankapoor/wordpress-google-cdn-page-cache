@@ -27,9 +27,9 @@ server {
 	server_name o10n-google-cdn.pagespeed.pro;
 
 	location / {
-		proxy_pass							https://origin_https$uri;
-		proxy_set_header  host 				$host;
-		proxy_set_header  X-Forwarded-For 	$proxy_add_x_forwarded_for;
+		proxy_pass   https://origin_https$uri;
+		proxy_set_header   host             $host;
+		proxy_set_header   X-Forwarded-For  $proxy_add_x_forwarded_for;
 	}
 }
 
@@ -37,11 +37,11 @@ server {
     listen 80;
     server_name o10n-google-cdn.pagespeed.pro;
 
-    location / {
-		proxy_pass							http://origin_http$uri;
-		proxy_set_header  host 				$host;
-		proxy_set_header  X-Forwarded-For 	$proxy_add_x_forwarded_for;
-    }
+	location / {
+		proxy_pass   https://origin_http$uri;
+		proxy_set_header   host             $host;
+		proxy_set_header   X-Forwarded-For  $proxy_add_x_forwarded_for;
+	}
 }
 
 ```
