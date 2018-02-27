@@ -29,7 +29,7 @@ if (defined('WP_INSTALLING') && WP_INSTALLING) {
 }
 
 // settings
-$module_version = '0.0.1';
+$module_version = '0.0.1'; #
 $minimum_core_version = '0.0.10';
 $plugin_path = dirname(__FILE__);
 
