@@ -46,7 +46,7 @@ server {
 
 ```
 
-** Warning: this is a first prototype Nginx server config. The documentation is under construction. **
+**Warning: this is a first prototype Nginx server config. The documentation is under construction.**
 
 The plugin provides in basic management functionality such as controlling the CDN cache expiry. Cache invalidation is not yet possible from PHP but once that's made available by Google it will be added. 
 
