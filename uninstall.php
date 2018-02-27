@@ -1,0 +1,29 @@
+<?php
+namespace O10n;
+
+/**
+ * Fired when the plugin is uninstalled.
+ *
+ * @link       https://github.com/o10n-x/
+ * @package    optimization
+ */
+
+if (! defined('WP_UNINSTALL_PLUGIN')) {
+    exit;
+}
+
+$plugin_path = dirname(__FILE__);
+
+// load uninstall controller
+if (!class_exists('\O10n\Uninstall')) {
+    require $plugin_path . '/core/controllers/uninstall.php';
+}
+
+// start uninstaller
+$uninstaller = new Uninstall('gcpc');
+
+// delete settings
+$uninstaller->delete_settings('gcpc');
+
+// delete cache tables
+$uninstaller->delete_tables();
