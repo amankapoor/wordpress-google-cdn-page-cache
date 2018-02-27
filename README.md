@@ -48,7 +48,7 @@ server {
 
 **Warning: this is a first prototype Nginx server config. The documentation is under construction.**
 
-The next step is to setup a [Google Cloud Load Balancer](https://cloud.google.com/load-balancing/) with the option `CDN` enabled. This will create a public caching CDN IP that will access your server via the Nginx proxy. You can configure the CDN IP via the DNS or use Google's international DNS. 
+The next step is to setup a [Google Cloud Load Balancer](https://cloud.google.com/load-balancing/) with the option `CDN` enabled. This will create a public caching CDN IP that will access your server via the Nginx proxy. You can connect your domain to the CDN IP via your DNS provider (a simple A record) or use Google's international [Cloud DNS](https://cloud.google.com/dns/). 
 
 The CDN will cache content based on HTTP headers which are controlled by the plugin.
 
