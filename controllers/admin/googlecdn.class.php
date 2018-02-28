@@ -82,10 +82,6 @@ class AdminGooglecdn extends ModuleAdminController implements Module_Admin_Contr
         // preload menu icon?>
 <link rel="preload" href="<?php print $module_url; ?>admin/images/google-cloud.svg" as="image" type="image/svg+xml" />
 <?php
-
-        // global admin script
-        wp_enqueue_script("o10n-google-cdn-page-cache-menu", $module_url . 'admin/js/view-google-cdn-admin.js', array( 'jquery' ), $version);
-        wp_localize_script("o10n-google-cdn-page-cache-menu", "o10n_google_cdn_dir", $module_url);
     }
 
     /**
