@@ -45,26 +45,11 @@ The instructions are available on ...
 
 == Changelog ==
 
-= 1.0.3 =
-Conversion of plugin to Page Cache Module. See [https://github.com/o10n-x/](https://github.com/o10n-x/) for optimization plugins.
-
-= 1.0.2 =
-* Added functionality to set Google Cloud CDN cache age or expire date (HTTP headers).
-* Added default Google Cloud CDN cache age setting.
+= 1.0.1 =
+Core update (see changelog.txt)
 
 = 1.0 =
 * The first version.
-
-
-== Changelog ==
-
-= 0.0.3 =
-
-Core update (see changelog.txt)
-
-= 0.0.1 =
-
-Beta release. Please provide feedback on [Github forum](https://github.com/o10n-x/wordpress-http2-optimization/issues).
 
 == Upgrade Notice ==
 
