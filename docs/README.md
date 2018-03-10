@@ -14,7 +14,7 @@ Once the instance is created, setup SSH and login to the server. Install Nginx u
 
 The Nginx server is technically very simple and should perform well on the micro instance. The nginx server configuration files are located in `/etc/nginx/sites-enabled/`. You can manage individual files for domains or add a single `origin-pull.conf` file.
 
-**Warning: the following Nginx server config is a first prototype Nginx origin pull server config. The documentation is under construction. Nginx expert? Please submit your advise on the forum.**
+**Warning: the following Nginx origin pull server config is a first prototype. The documentation is under construction. Nginx expert? Please submit your advise on the forum.**
 
 ```nginx
 # Origin pull in nginx 
