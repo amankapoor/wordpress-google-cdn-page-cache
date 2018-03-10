@@ -20,13 +20,13 @@ $module_version = $view->module->version();
 	<div class="metabox-prefs">
 		<div class="wrap about-wrap" style="position:relative;">
 			<div style="float:right;">
-				<a href="https://aws.amazon.com/cloudfront/" target="_blank" rel="noopener"><img src="<?php print $view->module->dir_url(); ?>admin/images/amazon-google-cdn.png" alt="Amazon Google CDN" width="200" height="250" border="0" style="float:right;"></a>
+				<a href="https://cloud.google.com/cdn/" target="_blank" rel="noopener"><img src="<?php print $view->module->dir_url(); ?>admin/images/google-cloud-cdn.png" alt="Google Cloud CDN" width="200" height="250" border="0" style="float:right;"></a>
 			</div>
 			<h1><?php print $module_name; ?> <?php print $module_version; ?></h1>
 
 			<p class="about-text" style="min-height:inherit;">Thank you for using the <?php print $module_name; ?> plugin by <a href="https://github.com/o10n-x/" target="_blank" rel="noopener" style="color:black;text-decoration:none;">Optimization.Team</a></p>
 			
-			<p class="about-text" style="min-height:inherit;">This plugin enables to use <a href="https://aws.amazon.com/cloudfront/" target="_blank">Google Cloud CDN</a> as a international page cache for WordPress. </p>
+			<p class="about-text" style="min-height:inherit;">This plugin enables to use <a href="https://cloud.google.com/cdn/" target="_blank">Google Cloud CDN</a> as a international page cache for WordPress. </p>
 
 			<p class="about-text info_yellow" style="min-height:inherit;"><strong>Warning:</strong> This plugin requires manual configuration of a <a href="https://cloud.google.com/wordpress/" target="_blank">Google Cloud instance</a> (a free VPS with SSH) and the setup of a custom nginx server.</p>
 

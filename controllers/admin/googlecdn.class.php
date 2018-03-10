@@ -142,7 +142,7 @@ class AdminGooglecdn extends ModuleAdminController implements Module_Admin_Contr
             $row_meta = array(
                 'o10n_google_cloud_console' => '<a href="' . esc_url('https://console.cloud.google.com/compute/instances') . '" target="_blank" title="' . esc_attr(__('Google Cloud Console', 'o10n')) . '">' . __('Google Cloud Console', 'o10n') . '</a>',
 
-                'o10n_google_cloud_support' => '<a href="' . esc_url('https://cloud.google.com/support/') . '" target="_blank" title="' . esc_attr(__('Google Cloud Support', 'o10n')) . '" style="font-weight:bold;color:#E47911;">' . __('Google Cloud Support', 'o10n') . '</a>'
+                'o10n_google_cloud_support' => '<a href="' . esc_url('https://cloud.google.com/support/') . '" target="_blank" title="' . esc_attr(__('Google Cloud Support', 'o10n')) . '" style="font-weight:bold;color:#4285f4;">' . __('Google Cloud Support', 'o10n') . '</a>'
             );
 
             return array_merge($links, $row_meta);

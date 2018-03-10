@@ -12,7 +12,7 @@ namespace O10n;
  * @wordpress-plugin
  * Plugin Name:       Google Cloud Page Cache CDN
  * Description:       Low cost and high performance international page cache based on Google Cloud CDN.
- * Version:           1.0.4
+ * Version:           1.0.5
  * Author:            Optimization.Team
  * Author URI:        https://optimization.team/
  * Text Domain:       o10n
@@ -29,7 +29,7 @@ if (defined('WP_INSTALLING') && WP_INSTALLING) {
 }
 
 // settings
-$module_version = '1.0.4';
+$module_version = '1.0.5';
 $minimum_core_version = '0.0.16';
 $plugin_path = dirname(__FILE__);
 
