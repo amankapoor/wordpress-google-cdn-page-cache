@@ -28,6 +28,7 @@ upstream origin_http {
 server {
 	listen    443 ssl http2;
 	server_name yourdomain.com www.yourdomain.com;
+	server_name yourseconddomain.com www.yourseconddomain.com;
 
 	location / {
 		proxy_pass   https://origin_https$uri;
@@ -39,6 +40,7 @@ server {
 server {
     listen 80;
     server_name yourdomain.com www.yourdomain.com;
+    server_name yourseconddomain.com www.yourseconddomain.com;
 
 	location / {
 		proxy_pass   https://origin_http$uri;
