@@ -5,7 +5,7 @@ Tags: cache, google, cdn, google cloud, page cache, site cache, cloud, seo, inte
 Requires at least: 4.0
 Requires PHP: 5.4
 Tested up to: 4.9.4
-Stable tag: 1.0.6
+Stable tag: 1.0.12
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -45,7 +45,13 @@ The instructions are available on ...
 
 == Changelog ==
 
-= 1.0.6 =
+= 1.0.12 =
+Core update (see changelog.txt)
+
+= 1.0.9 =
+* Bugfix: settings not saved.
+
+= 1.0.7 =
 Core update (see changelog.txt)
 
 = 1.0.5 =

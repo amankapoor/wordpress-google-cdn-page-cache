@@ -13,7 +13,7 @@ if (!defined('ABSPATH') || !defined('O10N_ADMIN')) {
 }
 
 // print form header
-$this->form_start(__('Google CDN Page Cache Settings', 'o10n'), 'google-cdn');
+$this->form_start(__('Google CDN Page Cache Settings', 'o10n'), 'googlecdn');
 
 // site host
 $host = parse_url(site_url(), PHP_URL_HOST);

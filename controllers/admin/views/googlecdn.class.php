@@ -142,7 +142,6 @@ class AdminViewGooglecdn extends AdminViewBase
                 if ($forminput->bool('google-cdn.enabled')) {
                     $forminput->type_verify(array(
                         'google-cdn.host' => 'string',
-                        'google-cdn.origin' => 'string',
                         'google-cdn.max_age' => 'int-empty'
                     ));
                 }
