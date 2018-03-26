@@ -5,7 +5,7 @@ Tags: cache, google, cdn, google cloud, page cache, site cache, cloud, seo, inte
 Requires at least: 4.0
 Requires PHP: 5.4
 Tested up to: 4.9.4
-Stable tag: 1.0.19
+Stable tag: 1.0.20
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -44,6 +44,9 @@ The instructions are available on ...
 5. Google Cloud CDN Network (2017)
 
 == Changelog ==
+
+= 1.0.20 =
+* Bugfix: cache headers not set.
 
 = 1.0.19 =
 Core update (see changelog.txt)
