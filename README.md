@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/o10n-x/wordpress-google-cdn-page-cache.svg?branch=master)](https://travis-ci.org/o10n-x/wordpress-google-cdn-page-cache)
+[![Build Status](https://travis-ci.org/o10n-x/wordpress-google-cdn-page-cache.svg?branch=master)](https://travis-ci.org/o10n-x/wordpress-google-cdn-page-cache) ![Version](https://img.shields.io/github/release/o10n-x/wordpress-google-cdn-page-cache.svg)
 
 ## Google Cloud CDN Page Cache
 
