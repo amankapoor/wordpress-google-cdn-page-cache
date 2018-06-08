@@ -125,6 +125,21 @@ class AdminGooglecdn extends ModuleAdminController implements Module_Admin_Contr
     }
 
     /**
+     * Return help tab data
+     */
+    final public function help_tab()
+    {
+        $data = array(
+            'name' => __('Google Cloud CDN Page Cache', 'o10n'),
+            'github' => 'https://github.com/o10n-x/wordpress-google-cdn-page-cache',
+            'wordpress' => 'https://wordpress.org/support/plugin/gc-page-cache',
+            'docs' => 'https://github.com/o10n-x/wordpress-google-cdn-page-cache/tree/master/docs'
+        );
+
+        return $data;
+    }
+
+    /**
      * Show row meta on the plugin screen.
      */
     final public function plugin_row_meta($links, $file)
@@ -139,11 +154,17 @@ class AdminGooglecdn extends ModuleAdminController implements Module_Admin_Contr
                 $lgcode = '';
             }
 
-            $row_meta = array(
-                'o10n_google_cloud_console' => '<a href="' . esc_url('https://console.cloud.google.com/compute/instances') . '" target="_blank" title="' . esc_attr(__('Google Cloud Console', 'o10n')) . '">' . __('Google Cloud Console', 'o10n') . '</a>',
+            $row_meta = array();
 
-                'o10n_google_cloud_support' => '<a href="' . esc_url('https://cloud.google.com/support/') . '" target="_blank" title="' . esc_attr(__('Google Cloud Support', 'o10n')) . '" style="font-weight:bold;color:#4285f4;">' . __('Google Cloud Support', 'o10n') . '</a>'
-            );
+            $plugin_links = $this->help_tab();
+
+            if ($plugin_links && isset($plugin_links['github'])) {
+                $row_meta['o10n_version'] = '<a href="'.trailingslashit($plugin_links['github']).'releases/" target="_blank" title="' . esc_attr(__('View Version History', 'o10n')) . '" style=""><span class="dashicons dashicons-clock"></span> ' . __('Version History', 'o10n') . '</a>';
+            }
+
+            $row_meta['o10n_google_cloud_console'] = '<a href="' . esc_url('https://console.cloud.google.com/compute/instances') . '" target="_blank" title="' . esc_attr(__('Google Cloud Console', 'o10n')) . '">' . __('Google Cloud Console', 'o10n') . '</a>';
+
+            $row_meta['o10n_google_cloud_support'] = '<a href="' . esc_url('https://cloud.google.com/support/') . '" target="_blank" title="' . esc_attr(__('Google Cloud Support', 'o10n')) . '" style="font-weight:bold;color:#4285f4;">' . __('Google Cloud Support', 'o10n') . '</a>';
 
             return array_merge($links, $row_meta);
         }

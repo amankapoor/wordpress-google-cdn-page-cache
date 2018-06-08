@@ -73,14 +73,7 @@ class AdminViewGooglecdn extends AdminViewBase
      */
     final public function help_tab()
     {
-        $data = array(
-            'name' => __('Google Cloud CDN Page Cache', 'o10n'),
-            'github' => 'https://github.com/o10n-x/wordpress-google-cdn-page-cache',
-            'wordpress' => 'https://wordpress.org/support/plugin/gc-page-cache',
-            'docs' => 'https://github.com/o10n-x/wordpress-google-cdn-page-cache/tree/master/docs'
-        );
-
-        return $data;
+        return $this->AdminGooglecdn->help_tab();
     }
 
     /**
