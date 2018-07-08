@@ -66,6 +66,20 @@ class Googlecdn extends Controller implements Controller_Interface
         add_action('init', array($this, 'wp_init'), $this->first_priority);
         add_action('admin_init', array($this, 'wp_init'), $this->first_priority);
 
+        // setup on WordPress init hook
+        add_action('init', array($this, 'init_setup'), PHP_INT_MAX);
+    }
+
+    /**
+     * Setup controller on WordPress init
+     */
+    final public function init_setup()
+    {
+        // verify if page cache is enabled
+        if (!$this->options->bool('google-cdn.enabled')) {
+            return;
+        }
+
         // add HTTP cache headers
         add_action('send_headers', array($this, 'add_cache_headers'), $this->first_priority);
     }
